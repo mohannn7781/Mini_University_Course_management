@@ -37,21 +37,24 @@ class Course{
 }
 class Student {
     private String studentId;
-    private String student_Name;
-    private String Branch;
+    private String studentName;
+    private String branch;
     public Student(String studentId, String student_Name, String Branch){
         this.studentId=studentId;
-        this.student_Name=student_Name;
-        this.Branch=Branch;
+        this.studentName=student_Name;
+        this.branch=Branch;
     }
     public String get_StudentId(){
         return studentId;
     }
     public void change_studentBranch(String Branch){
-        this.Branch=Branch;
+        this.branch=Branch;
     }
     public String getStudentName(){
-        return student_Name;
+        return studentName;
+    }
+    public String getBranch(){
+        return branch;
     }
 
     
